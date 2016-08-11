@@ -14,8 +14,6 @@ python:
 
 sudo: required
 
-services: sqlite3
-
 notifications:
   email: false
   slack: englishtool:4bB96RvsqKdgxqo59chj1KTh
