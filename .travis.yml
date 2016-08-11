@@ -10,14 +10,14 @@
 language: python
 
 python:
-  - 3.5
+  - "3.5"
 
 sudo: required
 
 services: sqlite3
 
 env:
-  - DJANGO=1.10.0
+  - DJANGO=1.10
 
 before_install:
   - export DJANGO_SETTINGS_MODULE=demo.settings
@@ -27,3 +27,4 @@ before_install:
 install:
   - pip install django==$DJANGO --quiet
 
+script: nosetests
