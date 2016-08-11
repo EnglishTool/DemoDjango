@@ -16,6 +16,12 @@ sudo: required
 
 services: sqlite3
 
+notifications:
+  email: false
+  slack: englishtool:4bB96RvsqKdgxqo59chj1KTh
+    on_success: always
+    on_failure: always
+
 env:
   - DJANGO=1.10
 
